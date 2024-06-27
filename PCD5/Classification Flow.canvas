@@ -1,0 +1,505 @@
+{
+  "nodes": [
+    {
+      "id": "319f4ff537650815",
+      "type": "text",
+      "text": "Start",
+      "shape": "oval",
+      "isStartNode": true,
+      "x": -440,
+      "y": -1160,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "5d833dc0e1e33989",
+      "type": "text",
+      "text": "manipulate_date_columns",
+      "shape": "centered-rectangle",
+      "x": -439,
+      "y": -1040,
+      "width": 259,
+      "height": 60
+    },
+    {
+      "id": "c756ec3756c56b1c",
+      "type": "text",
+      "text": "Create empty df to hold processed txns",
+      "x": -439,
+      "y": -940,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "7d9789c8e86ad73e",
+      "type": "text",
+      "text": "logging to inform the client_id has empty txns",
+      "isStartNode": false,
+      "x": -80,
+      "y": -770,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "7682cd1d187f4811",
+      "type": "text",
+      "text": "is transactions empty?",
+      "shape": "diamond",
+      "x": -439,
+      "y": -820,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "b80c5b295e11deca",
+      "type": "text",
+      "text": "Create groups of transaction based on bv_account_id",
+      "x": -438,
+      "y": -574,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "103acc3ce47d12f6",
+      "type": "text",
+      "text": "Call [[Classification#process_cluster]]",
+      "x": -438,
+      "y": -400,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "24994da8b4b9cd9f",
+      "type": "text",
+      "text": "Process failed?",
+      "shape": "diamond",
+      "x": -438,
+      "y": -260,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "2a4a4c077ed0bce7",
+      "type": "text",
+      "text": "Append output to processed transaction df",
+      "x": -438,
+      "y": -100,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "87f1f83635d7fa72",
+      "type": "text",
+      "text": "Call [[Classification#process_exception]]",
+      "x": -58,
+      "y": -260,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "e9c1449979fbad3e",
+      "type": "text",
+      "text": "All bv_account_id group is processed?",
+      "shape": "diamond",
+      "x": -438,
+      "y": 40,
+      "width": 260,
+      "height": 140
+    },
+    {
+      "id": "00af8cc0c12ad08c",
+      "type": "text",
+      "text": "Is there `tagger` in processed transactions",
+      "shape": "diamond",
+      "x": -40,
+      "y": 30,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "a828202b81e55ee8",
+      "type": "text",
+      "text": "Return the processed transaction",
+      "x": -40,
+      "y": 301,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "ed7d245e3d4bee99",
+      "type": "text",
+      "text": "Update the `pcd_txn_type` column to be `pacheck` or `potential_paycheck` based on `tagger` is null or not",
+      "x": 320,
+      "y": 30,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "5bee32cc72ebe83d",
+      "type": "text",
+      "text": "Start",
+      "shape": "oval",
+      "isStartNode": true,
+      "x": 540,
+      "y": -770,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "e37e9e5649f86352",
+      "type": "text",
+      "text": "manipulate_date_columns",
+      "shape": "centered-rectangle",
+      "x": 880,
+      "y": -770,
+      "width": 259,
+      "height": 60
+    },
+    {
+      "id": "1472c7c6a474d2d9",
+      "type": "text",
+      "text": "Create empty df to hold processed txns",
+      "x": 1200,
+      "y": -770,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "5d5d2329c37f9e63",
+      "type": "text",
+      "text": "is transactions empty?",
+      "shape": "diamond",
+      "x": 1200,
+      "y": -640,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "9c155ea3457c3496",
+      "type": "text",
+      "text": "logging to inform the client_id has empty txns",
+      "isStartNode": false,
+      "x": 840,
+      "y": -590,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "8f0193d0a5bef0ba",
+      "type": "text",
+      "text": "Create groups of transaction based on bv_account_id",
+      "x": 1540,
+      "y": -590,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "a01befbce06ba977",
+      "type": "text",
+      "text": "Call [[Classification#process_cluster]]",
+      "x": 1920,
+      "y": -590,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "4d157493462b6a98",
+      "type": "text",
+      "text": "Process failed?",
+      "shape": "diamond",
+      "x": 1920,
+      "y": -440,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "450e246d81aea5e7",
+      "type": "text",
+      "text": "Call [[Classification#process_exception]]",
+      "x": 1540,
+      "y": -440,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "5d7ac43b5ca5c073",
+      "type": "text",
+      "text": "Append output to processed transaction df",
+      "x": 2260,
+      "y": -590,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "b52eb940984bd3bb",
+      "type": "text",
+      "text": "All bv_account_id group is processed?",
+      "shape": "diamond",
+      "x": 2600,
+      "y": -630,
+      "width": 260,
+      "height": 140
+    },
+    {
+      "id": "85f60bfeb967fe78",
+      "type": "text",
+      "text": "Is there `tagger` in processed transactions",
+      "shape": "diamond",
+      "x": 2600,
+      "y": -410,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "9a7feb80721f92ac",
+      "type": "text",
+      "text": "Return the processed transaction",
+      "x": 2240,
+      "y": -360,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "b6d9d80d9add9594",
+      "type": "text",
+      "text": "Update the `pcd_txn_type` column to be `pacheck` or `potential_paycheck` based on `tagger` is null or not",
+      "x": 2600,
+      "y": -180,
+      "width": 260,
+      "height": 160
+    }
+  ],
+  "edges": [
+    {
+      "id": "2bba16435ae3f266",
+      "edgePathRoute": "direct",
+      "fromNode": "319f4ff537650815",
+      "fromSide": "bottom",
+      "toNode": "5d833dc0e1e33989",
+      "toSide": "top"
+    },
+    {
+      "id": "56717f90d99a489b",
+      "edgePathRoute": "direct",
+      "fromNode": "7682cd1d187f4811",
+      "fromSide": "right",
+      "toNode": "7d9789c8e86ad73e",
+      "toSide": "left",
+      "label": "Yes"
+    },
+    {
+      "id": "971e27ebc46994d7",
+      "fromNode": "5d833dc0e1e33989",
+      "fromSide": "bottom",
+      "toNode": "c756ec3756c56b1c",
+      "toSide": "top"
+    },
+    {
+      "id": "db8dabc66673942e",
+      "fromNode": "c756ec3756c56b1c",
+      "fromSide": "bottom",
+      "toNode": "7682cd1d187f4811",
+      "toSide": "top"
+    },
+    {
+      "id": "1ae352b47a145892",
+      "edgePathRoute": "direct",
+      "fromNode": "7682cd1d187f4811",
+      "fromSide": "bottom",
+      "toNode": "b80c5b295e11deca",
+      "toSide": "top",
+      "label": "No"
+    },
+    {
+      "id": "9702bd021f06f055",
+      "fromNode": "b80c5b295e11deca",
+      "fromSide": "bottom",
+      "toNode": "103acc3ce47d12f6",
+      "toSide": "top",
+      "label": "For each bv_account_id with its group"
+    },
+    {
+      "id": "0b922afec5521716",
+      "fromNode": "103acc3ce47d12f6",
+      "fromSide": "bottom",
+      "toNode": "24994da8b4b9cd9f",
+      "toSide": "top"
+    },
+    {
+      "id": "e55ceebb96405e71",
+      "fromNode": "24994da8b4b9cd9f",
+      "fromSide": "bottom",
+      "toNode": "2a4a4c077ed0bce7",
+      "toSide": "top",
+      "label": "No"
+    },
+    {
+      "id": "17ab1d5ca40e4925",
+      "fromNode": "24994da8b4b9cd9f",
+      "fromSide": "right",
+      "toNode": "87f1f83635d7fa72",
+      "toSide": "left",
+      "label": "Yes"
+    },
+    {
+      "id": "66f03739c77b0fba",
+      "fromNode": "2a4a4c077ed0bce7",
+      "fromSide": "bottom",
+      "toNode": "e9c1449979fbad3e",
+      "toSide": "top"
+    },
+    {
+      "id": "f14fc77781a74070",
+      "fromNode": "e9c1449979fbad3e",
+      "fromSide": "left",
+      "toNode": "103acc3ce47d12f6",
+      "toSide": "left",
+      "label": "No"
+    },
+    {
+      "id": "492bfddf5a209853",
+      "fromNode": "e9c1449979fbad3e",
+      "fromSide": "right",
+      "toNode": "00af8cc0c12ad08c",
+      "toSide": "left",
+      "label": "Yes"
+    },
+    {
+      "id": "bd7e8691adfab20c",
+      "fromNode": "00af8cc0c12ad08c",
+      "fromSide": "bottom",
+      "toNode": "a828202b81e55ee8",
+      "toSide": "top",
+      "label": "No"
+    },
+    {
+      "id": "ab7726ee66747bbf",
+      "fromNode": "00af8cc0c12ad08c",
+      "fromSide": "right",
+      "toNode": "ed7d245e3d4bee99",
+      "toSide": "left",
+      "label": "Yes"
+    },
+    {
+      "id": "367a22e123540009",
+      "fromNode": "ed7d245e3d4bee99",
+      "fromSide": "bottom",
+      "toNode": "a828202b81e55ee8",
+      "toSide": "right"
+    },
+    {
+      "id": "fc32647b9bf65efe",
+      "fromNode": "5bee32cc72ebe83d",
+      "fromSide": "right",
+      "toNode": "e37e9e5649f86352",
+      "toSide": "left"
+    },
+    {
+      "id": "b88805b9ca8663c2",
+      "fromNode": "e37e9e5649f86352",
+      "fromSide": "right",
+      "toNode": "1472c7c6a474d2d9",
+      "toSide": "left"
+    },
+    {
+      "id": "d3ebec46b7ccf2de",
+      "fromNode": "1472c7c6a474d2d9",
+      "fromSide": "bottom",
+      "toNode": "5d5d2329c37f9e63",
+      "toSide": "top"
+    },
+    {
+      "id": "547a557e9edd9612",
+      "fromNode": "5d5d2329c37f9e63",
+      "fromSide": "left",
+      "toNode": "9c155ea3457c3496",
+      "toSide": "right",
+      "label": "Yes"
+    },
+    {
+      "id": "6e2e37d1278d53a7",
+      "fromNode": "5d5d2329c37f9e63",
+      "fromSide": "right",
+      "toNode": "8f0193d0a5bef0ba",
+      "toSide": "left",
+      "label": "No"
+    },
+    {
+      "id": "10d0be7802d4463e",
+      "fromNode": "8f0193d0a5bef0ba",
+      "fromSide": "right",
+      "toNode": "a01befbce06ba977",
+      "toSide": "left",
+      "label": "for loop"
+    },
+    {
+      "id": "43d93faf34134eef",
+      "fromNode": "a01befbce06ba977",
+      "fromSide": "bottom",
+      "toNode": "4d157493462b6a98",
+      "toSide": "top"
+    },
+    {
+      "id": "247772ad70cab6c3",
+      "fromNode": "4d157493462b6a98",
+      "fromSide": "left",
+      "toNode": "450e246d81aea5e7",
+      "toSide": "right",
+      "label": "Yes"
+    },
+    {
+      "id": "223edd555bc1a834",
+      "fromNode": "4d157493462b6a98",
+      "fromSide": "right",
+      "toNode": "5d7ac43b5ca5c073",
+      "toSide": "left",
+      "label": "No"
+    },
+    {
+      "id": "38207b8ff737af82",
+      "fromNode": "5d7ac43b5ca5c073",
+      "fromSide": "right",
+      "toNode": "b52eb940984bd3bb",
+      "toSide": "left"
+    },
+    {
+      "id": "3ae0087b1cabbde0",
+      "fromNode": "b52eb940984bd3bb",
+      "fromSide": "top",
+      "toNode": "a01befbce06ba977",
+      "toSide": "top",
+      "label": "No"
+    },
+    {
+      "id": "96e7ee9ef3e96b57",
+      "fromNode": "b52eb940984bd3bb",
+      "fromSide": "bottom",
+      "toNode": "85f60bfeb967fe78",
+      "toSide": "top",
+      "label": "Yes"
+    },
+    {
+      "id": "1bfd0f51deed048e",
+      "fromNode": "85f60bfeb967fe78",
+      "fromSide": "left",
+      "toNode": "9a7feb80721f92ac",
+      "toSide": "right",
+      "label": "No"
+    },
+    {
+      "id": "8098b8303643404a",
+      "fromNode": "85f60bfeb967fe78",
+      "fromSide": "bottom",
+      "toNode": "b6d9d80d9add9594",
+      "toSide": "top",
+      "label": "Yes"
+    },
+    {
+      "id": "0607b3376f2aab9d",
+      "fromNode": "b6d9d80d9add9594",
+      "fromSide": "left",
+      "toNode": "9a7feb80721f92ac",
+      "toSide": "bottom"
+    }
+  ]
+}
